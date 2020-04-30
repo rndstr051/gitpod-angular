@@ -1,5 +1,7 @@
 tasks:
   - init: echo "Replace me with a build script for the project."
-    command: ng serve --open
+    command: ng serve --public-host `gp url 4200 | sed 's/https\?:\/\///'` --open
 image:
   file: .gitpod.Dockerfile
+ports:
+  - port: 4200
