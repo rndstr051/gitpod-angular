@@ -3,6 +3,3 @@ tasks:
     command: ng serve --public-host `gp url 4200 | sed 's/https\?:\/\///'` --open
 image:
   file: .gitpod.Dockerfile
-ports:
-  - port: 4200
-    onOpen: ignore
